@@ -19,10 +19,13 @@ public class Game {
 	@Column(name = "game_year")
 	private Integer year;	//Pra não dar brete com o banco de dados do SQL, trocar o nome year
 	private String genre;
+	private String title;
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	@Column(columnDefinition = "TEXT") 
 	private String shortDescription;
+	@Column(columnDefinition = "TEXT") 
 	private String longDescription;
 	
 	public Game() {
